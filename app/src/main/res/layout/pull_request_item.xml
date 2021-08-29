@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="prData"
+            type="com.baymax.navigithubapp.api.response.PullRequest" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen100dp"
+            android:layout_margin="@dimen/margin5dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/pr_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/margin5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/pr_icon"/>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:text="@{prData.title}"
+                    android:textSize="@dimen/size18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/pr_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/pr_icon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/created_at"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin10dp"
+                    android:layout_marginBottom="@dimen/margin5dp"
+                    android:background="@drawable/oval_shape_green"
+                    android:text="@{`Created at \n`+prData.createdAt}"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/size8sp"
+                    android:visibility="@{prData.createdAt==null?View.GONE:View.VISIBLE}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/closed_at"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin10dp"
+                    android:layout_marginBottom="@dimen/margin5dp"
+                    android:background="@drawable/oval_shape_red"
+                    android:text="@{`Closed at \n`+prData.closedAt}"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/size8sp"
+                    android:visibility="@{prData.closedAt==null?View.GONE:View.VISIBLE}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/created_at" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/usr_prfl_img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin100dp"
+                    android:layout_marginBottom="@dimen/margin5dp"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp"
+                    app:imageUrl="@{prData.user.avatarUrl}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/usr_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin5dp"
+                    android:layout_marginEnd="@dimen/margin5dp"
+                    android:text="@{prData.user.login}"
+                    android:textSize="@dimen/size12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/usr_prfl_img"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/usr_prfl_img"
+                    app:layout_constraintTop_toTopOf="@id/usr_prfl_img" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

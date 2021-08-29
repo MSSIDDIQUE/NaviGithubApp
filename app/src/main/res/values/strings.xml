@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NaviGithubApp</string>
+    <string name="repo_owner">User name</string>
+    <string name="repo_name">Repository name</string>
+    <string name="search">Search</string>
+    <string name="title_pull_requests">Pull requests of the repo</string>
+    <string name="title_placeholder">Bump path-parse from 1.0.6 to 1.0.7</string>
+    <string name="time_placeholder"><b>Created at</b> \n2021–08-10T23:53:24Z</string>
+    <string name="user_name_placeholder">mssiddique</string>
+    <string name="loading_text">Loading...</string>
+</resources>

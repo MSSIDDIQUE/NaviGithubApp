@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin10dp">10dp</dimen>
+    <dimen name="size20sp">20sp</dimen>
+    <dimen name="dimen100dp">100dp</dimen>
+    <dimen name="margin5dp">5dp</dimen>
+    <dimen name="size10sp">10sp</dimen>
+    <dimen name="size5sp">5sp</dimen>
+    <dimen name="size8sp">8sp</dimen>
+    <dimen name="size18sp">18sp</dimen>
+    <dimen name="margin100dp">100dp</dimen>
+    <dimen name="size12sp">12sp</dimen>
+    <dimen name="elvtn10dp">10dp</dimen>
+</resources>
