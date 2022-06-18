@@ -28,7 +28,7 @@ class MainActivity : DaggerAppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        viewModel = ViewModelProvider(this, viewModelFactory).get(MainActivityViewModel::class.java)
+        viewModel = ViewModelProvider(this, viewModelFactory)[MainActivityViewModel::class.java]
         binding.apply {
             search.setOnClickListener {
                 val owner = ownerNameText.text.toString().trim()

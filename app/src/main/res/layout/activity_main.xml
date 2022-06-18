@@ -72,7 +72,7 @@
                     android:id="@+id/owner_name_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textColor="@color/purple_500"
                     android:text="jspruance"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,7 +93,7 @@
                     android:id="@+id/repo_name_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textColor="@color/purple_500"
                     android:text="musician-app"/>
             </com.google.android.material.textfield.TextInputLayout>
 

@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.baymax.navigithubapp.api.response.PullRequest
 import com.baymax.navigithubapp.databinding.PullRequestItemBinding
+import com.baymax.navigithubapp.utils.toTimeAgo
 
 class PrListAdapter(
     private val list: ArrayList<PullRequest>
@@ -30,6 +31,8 @@ class PrListAdapter(
         fun bind(data: PullRequest) {
             binding.apply {
                 prData = data
+                createdAt.text = "Created on \n ${data.createdAt.toTimeAgo()?:data.createdAt}"
+                closedAt.text = "Closed on \n ${data.closedAt.toTimeAgo()?:data.closedAt}"
             }
         }
     }

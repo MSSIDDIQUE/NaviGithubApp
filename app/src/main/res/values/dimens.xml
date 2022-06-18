@@ -3,6 +3,8 @@
     <dimen name="margin10dp">10dp</dimen>
     <dimen name="size20sp">20sp</dimen>
     <dimen name="dimen100dp">100dp</dimen>
+    <dimen name="dimen150dp">150dp</dimen>
+    <dimen name="dimen125dp">125dp</dimen>
     <dimen name="margin5dp">5dp</dimen>
     <dimen name="size10sp">10sp</dimen>
     <dimen name="size5sp">5sp</dimen>
