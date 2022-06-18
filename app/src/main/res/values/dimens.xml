@@ -12,5 +12,6 @@
     <dimen name="size18sp">18sp</dimen>
     <dimen name="margin100dp">100dp</dimen>
     <dimen name="size12sp">12sp</dimen>
+    <dimen name="size16sp">16sp</dimen>
     <dimen name="elvtn10dp">10dp</dimen>
 </resources>

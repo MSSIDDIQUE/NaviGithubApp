@@ -47,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin10dp"
                     android:text="@{prData.title}"
-                    android:textSize="@dimen/size18sp"
+                    android:textSize="@dimen/size16sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="@id/pr_icon"
                     app:layout_constraintEnd_toStartOf="@id/closed_at"
