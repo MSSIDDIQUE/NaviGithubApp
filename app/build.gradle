@@ -6,12 +6,12 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.baymax.navigithubapp"
+        applicationId "com.baymax.demoapp"
         minSdk 21
-        targetSdk 31
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -36,6 +36,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.baymax.demoapp'
 }
 
 dependencies {
@@ -92,7 +93,7 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$glide_version"
 
     //ThreeTenApiForDateTime
-    implementation 'com.jakewharton.threetenabp:threetenabp:1.4.0'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.4.1'
 
     // Google-Location
     implementation "com.google.android.gms:play-services-location:$location_version"

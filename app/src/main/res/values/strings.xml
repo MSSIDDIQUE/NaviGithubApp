@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NaviGithubApp</string>
+    <string name="app_name">DemoApp</string>
     <string name="repo_owner">User name</string>
     <string name="repo_name">Repository name</string>
     <string name="search">Search</string>

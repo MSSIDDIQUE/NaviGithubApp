@@ -8,7 +8,7 @@
 
         <variable
             name="prData"
-            type="com.baymax.navigithubapp.api.response.PullRequest" />
+            type="com.baymax.demoapp.api.response.PullRequest" />
 
     </data>
 
